@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#bcb440"
+            android:padding="24dp"
+            android:layout_marginBottom="16dp">
+
+
+            <TextView
+                android:text="EXCLUSIVE DESIGN AND BRAND"
+                android:textAlignment="center"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:text="Premium Collection 2024"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="#E0E0E0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/search_background"
+            android:iconifiedByDefault="false"
+            style="@style/CustomSearchViewStyle"
+            android:theme="@style/CustomSearchViewStyle"
+            android:queryHint="Search products..." />
+
+        <!-- Design 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="160dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/longsleve1"
+                android:background="#EEEEEE"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:text="ANGEL LONGSLEVE"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Premium Cotton Material"
+                    android:textSize="14sp"
+                    android:textColor="#757575"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:text="Rp.150.000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#F5F5F5"
+                    android:padding="6dp">
+
+
+                    <Button
+                        android:id="@+id/minusButton1"
+                        android:onClick="minusOrder"
+                        android:text="-"
+                        android:layout_width="54dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#bcb440"/>
+
+
+                    <EditText
+                        android:id="@+id/orderET"
+                        android:layout_width="18dp"
+                        android:layout_height="48dp"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="#212121"
+                        android:background="#F5F5F5"
+                        android:text="0"/>
+
+
+                    <Button
+                        android:id="@+id/plusButton1"
+                        android:onClick="plusOrder"
+                        android:text="+"
+                        android:layout_width="54dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#bcb440"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Design 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="160dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hoodiefour"
+                android:background="#EEEEEE"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:text="FOUR HOODIE"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Comfortable Hoodie Design"
+                    android:textSize="14sp"
+                    android:textColor="#757575"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:text="Rp.200.000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#F5F5F5"
+                    android:padding="8dp">
+
+                    <Button
+                        android:id="@+id/minusButton2"
+                        android:onClick="minusOrder"
+                        android:text="-"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#bcb440"/>
+
+                    <EditText
+                        android:id="@+id/orderET2"
+                        android:layout_width="18dp"
+                        android:layout_height="48dp"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="#212121"
+                        android:background="#F5F5F5"
+                        android:text="0"/>
+
+                    <Button
+                        android:id="@+id/plusButton2"
+                        android:onClick="plusOrder"
+                        android:text="+"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#bcb440"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- Design 3   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="160dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/longslvtribal"
+                android:background="#EEEEEE"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:text="TRIBAL LONGSLEVE"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Premium Cotton Material"
+                    android:textSize="14sp"
+                    android:textColor="#757575"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:text="Rp.100.000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#F5F5F5"
+                    android:padding="8dp">
+
+                    <Button
+                        android:id="@+id/minusButton3"
+                        android:onClick="minusOrder"
+                        android:text="-"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#bcb440"/>
+
+                    <EditText
+                        android:id="@+id/orderET3"
+                        android:layout_width="18dp"
+                        android:layout_height="48dp"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="#212121"
+                        android:background="#F5F5F5"
+                        android:text="0"/>
+
+                    <Button
+                        android:id="@+id/plusButton3"
+                        android:onClick="plusOrder"
+                        android:text="+"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#bcb440"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Design 4  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="160dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hoodiesunday"
+                android:background="#EEEEEE"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:text="SUNDAY HOODIE"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Comfortable Hoodie Design"
+                    android:textSize="14sp"
+                    android:textColor="#757575"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:text="Rp.150.000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#F5F5F5"
+                    android:padding="8dp">
+
+                    <Button
+                        android:id="@+id/minusButton4"
+                        android:onClick="minusOrder"
+                        android:text="-"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#bcb440"/>
+
+                    <EditText
+                        android:id="@+id/orderET4"
+                        android:layout_width="18dp"
+                        android:layout_height="48dp"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="#212121"
+                        android:background="#F5F5F5"
+                        android:text="0"/>
+
+                    <Button
+                        android:id="@+id/plusButton4"
+                        android:onClick="plusOrder"
+                        android:text="+"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#bcb440"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- Design 5  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="160dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/eviltee"
+                android:background="#EEEEEE"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:text="EVIL TEE"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Exclusive Cotton Material"
+                    android:textSize="14sp"
+                    android:textColor="#757575"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:text="Rp.200.000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#F5F5F5"
+                    android:padding="8dp">
+
+                    <Button
+                        android:id="@+id/minusButton5"
+                        android:onClick="minusOrder"
+                        android:text="-"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#bcb440"/>
+
+                    <EditText
+                        android:id="@+id/orderET5"
+                        android:layout_width="18dp"
+                        android:layout_height="48dp"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="#212121"
+                        android:background="#F5F5F5"
+                        android:text="0"/>
+
+                    <Button
+                        android:id="@+id/plusButton5"
+                        android:onClick="plusOrder"
+                        android:text="+"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#bcb440"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- Design 6  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="160dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hoodiesci"
+                android:background="#EEEEEE"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:text="SCI-FI HOODIE"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Comfortable Hoodie Design"
+                    android:textSize="14sp"
+                    android:textColor="#757575"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:text="Rp.250.000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#F5F5F5"
+                    android:padding="8dp">
+
+                    <Button
+                        android:id="@+id/minusButton6"
+                        android:onClick="minusOrder"
+                        android:text="-"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#bcb440"/>
+
+                    <EditText
+                        android:id="@+id/orderET6"
+                        android:layout_width="18dp"
+                        android:layout_height="48dp"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="#212121"
+                        android:background="#F5F5F5"
+                        android:text="0"/>
+
+                    <Button
+                        android:id="@+id/plusButton6"
+                        android:onClick="plusOrder"
+                        android:text="+"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#bcb440"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Total Price Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#bcb440"
+            android:padding="20dp"
+            android:layout_marginTop="16dp">
+
+
+
+
+            <!-- activity_main.xml - Add before the Total Price Section -->
+            <RadioGroup
+                android:id="@+id/sizeRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="16dp">
+
+                <RadioButton
+                    android:id="@+id/sizeS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Size S"
+                    android:textColor="#000000"
+                    android:buttonTint="#000000"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/sizeM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Size M"
+                    android:textColor="#000000"
+                    android:buttonTint="#000000"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/sizeL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Size L"
+                    android:textColor="#000000"
+                    android:buttonTint="#000000"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/giftWrapCheckbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gift Wrap (+Rp. 10.000)"
+                android:padding="16dp"
+                android:textColor="#000000"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/datePickerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Delivery Date"
+                android:backgroundTint="#FFFFFF"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/productRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="16dp"
+                android:backgroundTint="#329b32"
+                android:src="@android:drawable/ic_input_add"/>
+
+            <TextView
+                android:text="Total Belanja"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/totalPriceTV"
+                android:textAlignment="center"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:text="Rp. 0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+<!--  Pembayaran button      -->
+        <Button
+            android:id="@+id/openPaymentButton"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Buka Halaman Pembayaran"
+            android:backgroundTint="#329b32"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:backgroundTint="#FF0000"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+</ScrollView>
